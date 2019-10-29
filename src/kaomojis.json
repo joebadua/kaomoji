@@ -1,27 +1,24 @@
 {
-  "happy": [
-    {
-      "emoticon": "（*＾ワ＾*）",
-      "subcategory": "cheerful"
-    },
-    {
-      "emoticon": "(*＾წ＾*）",
-      "subcategory": "cheerful"
-    },
-    {
-      "emoticon": "(*꧆▽꧆*)",
-      "subcategory": "cheerful"
-    },
-    {
-      "emoticon": "ヾ(＠⌒ー⌒＠)ノ",
-      "subcategory": "cheerful"
-    }
-    
-  ],
-  "excited" : [
-    {
-      "emoticon": "☆*: .｡. o(≧▽≦)o .｡.:*☆ ",
-      "subcategory": "excited"
-    }
-  ]
+	"happy": [{
+			"emoticon": "（*＾ワ＾*）",
+			"subcategory": "cheerful"
+		},
+		{
+			"emoticon": "(*＾წ＾*）",
+			"subcategory": "cheerful"
+		},
+		{
+			"emoticon": "(*꧆▽꧆*)",
+			"subcategory": "cheerful"
+		},
+		{
+			"emoticon": "ヾ(＠⌒ー⌒＠)ノ",
+			"subcategory": "cheerful"
+		}
+
+	],
+	"excited": [{
+		"emoticon": "☆*: .｡. o(≧▽≦)o .｡.:*☆ ",
+		"subcategory": "excited"
+	}]
 }

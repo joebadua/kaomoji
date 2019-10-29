@@ -16,13 +16,63 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
 .App-link {
   color: #09d3ac;
 }
 .Emoticon {
   margin-top: 15px;
+  margin-left: 10px;
+  -webkit-transition: opacity .5s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out;
+  -ms-transition: opacity .5s ease-in-out;
+  -o-transition: opacity .5s ease-in-out;
+  transition: opacity .5s ease-in-out;
 }
-#App-test-button {
-  margin-top: 10px;
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted grey;
+  color: #005050;
 }
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  position: absolute;
+  width: 180px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 2px;
+  border-radius: 5px;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity .6s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltip-top {
+  bottom: 90%;
+  margin-left: -60px;
+}
+
+.tooltip-left {
+  top: -5px;
+  right: 128%;
+}
+
+.tooltip-bottom {
+  top: 100%; 
+  margin-left: -60px;
+}
+
+.tooltip-right {
+  top: -5px;
+  left: 125%;
+}
+
+
