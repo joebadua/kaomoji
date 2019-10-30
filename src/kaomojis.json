@@ -1,24 +1,54 @@
-{
-	"happy": [{
-			"emoticon": "（*＾ワ＾*）",
-			"subcategory": "cheerful"
-		},
-		{
-			"emoticon": "(*＾წ＾*）",
-			"subcategory": "cheerful"
-		},
-		{
-			"emoticon": "(*꧆▽꧆*)",
-			"subcategory": "cheerful"
-		},
-		{
-			"emoticon": "ヾ(＠⌒ー⌒＠)ノ",
-			"subcategory": "cheerful"
-		}
-
-	],
-	"excited": [{
-		"emoticon": "☆*: .｡. o(≧▽≦)o .｡.:*☆ ",
-		"subcategory": "excited"
-	}]
-}
+[{
+    "emoticon": "（*＾ワ＾*）",
+    "category": "joy",
+    "subcategory": "cheerful"
+  },
+  {
+    "emoticon": "(*＾წ＾*）",
+    "category": "joy",
+    "subcategory": "cheerful"
+  },
+  {
+    "emoticon": "(*꧆▽꧆*)",
+    "category": "joy",
+    "subcategory": "cheerful"
+  },
+  {
+    "emoticon": "ヾ(＠⌒ー⌒＠)ノ",
+    "category": "joy",
+    "subcategory": "cheerful"
+  },
+  {
+    "emoticon": "☆*: .｡. o(≧▽≦)o .｡.:*☆ ",
+    "category": "joy",
+    "subcategory": "excited"
+  },
+  {
+    "emoticon": "。.:☆*:･'(*⌒―⌒*)))",
+    "category": "joy"
+  },
+  {
+    "emoticon": "｀;:゛;｀;･(°ε° )",
+    "category": "joy"
+  },
+  {
+    "emoticon": "(o･ω･o)",
+    "category": "joy"
+  },
+  {
+    "emoticon": "(＠＾◡＾)",
+    "category": "joy"
+  },
+  {
+    "emoticon": "(⌒▽⌒)☆",
+    "category": "joy"
+  },
+  {
+    "emoticon": "<(￣︶￣)>",
+    "category": "joy"
+  },
+  {
+    "emoticon": "(*´▽`*)",
+    "category": "joy"
+  }
+]

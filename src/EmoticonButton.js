@@ -1,16 +1,13 @@
-import React, { Component, useState, useRef } from 'react';
+import React, { Component, useRef } from 'react';
 import Button from 'react-bootstrap/Button';
-import Overlay from 'react-bootstrap/Overlay'
-import Tooltip from 'react-bootstrap/Tooltip'
 import './App.css';
 
 import Kaomojis from './kaomojis.json'
 
 const EmojiButton = props => {
-    const [show, setShow] = useState(false);
     const target = useRef(null)
 
-    const list = Kaomojis.happy.map(index => { 
+    const list = Kaomojis.map(index => { 
         const ButtonEvent = () => {
             props.CopyChar(index.emoticon)
         }
@@ -32,7 +29,7 @@ const EmojiButton = props => {
     )
 }
 
-class ButtonTest extends Component {
+class EmoticonButton extends Component {
     render() {
         const {CopyChar} = this.props
 
@@ -43,7 +40,7 @@ class ButtonTest extends Component {
     
 }
 
-export default ButtonTest;
+export default EmoticonButton;
 
 
 /* OLD METHOD FOR SINGLE BUTTON */
