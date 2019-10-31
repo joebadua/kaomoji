@@ -1,6 +1,4 @@
-
 .App {
-  text-align: center;
   max-width: 680px;
   margin: 2rem auto;
 }
@@ -22,16 +20,12 @@
 .App-link {
   color: #09d3ac;
 }
-.Emoticon {
-  margin-top: 15px;
-  margin-left: 10px;
-  -webkit-transition: opacity .5s ease-in-out;
-  -moz-transition: opacity .5s ease-in-out;
-  -ms-transition: opacity .5s ease-in-out;
-  -o-transition: opacity .5s ease-in-out;
-  transition: opacity .5s ease-in-out;
+.ui.button.Emoticon {
+  text-align: center;
+  margin: 5px auto;
+  margin-left: 2px;
+  margin-right: 2px;
 }
-
 .tooltip {
   position: relative;
   display: inline-block;
@@ -76,6 +70,10 @@
 .tooltip-right {
   top: -5px;
   left: 125%;
+}
+
+.EmoticonButton {
+  text-align: center;
 }
 
 

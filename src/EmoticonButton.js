@@ -6,7 +6,6 @@ import './App.css';
 import Kaomojis from './kaomojis.json'
 
 const EmojiButton = props => {
-    const target = useRef(null)
     const option = props.option
     const emojilist = Kaomojis[option]
 
@@ -17,10 +16,11 @@ const EmojiButton = props => {
 
         return (
             <>
-                <Button basic
+                <Button basic color="black"
                         className="Emoticon" 
                         id={index.emoticon} 
                         key={index.emoticon}
+                        size="large"
                         onClick={ () => ButtonEvent(this)}> {index.emoticon} </Button>
             </>
         )
@@ -35,7 +35,10 @@ class EmoticonButton extends Component {
         const {CopyChar, option} = this.props
 
         return (
-            <EmojiButton CopyChar={CopyChar} option={option}/>
+            <div className="EmoticonButton">
+                <p> test one two three... </p>
+                <EmojiButton CopyChar={CopyChar} option={option}/>
+            </div>
         )
     }
     

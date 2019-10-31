@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import EmoticonButton from './EmoticonButton'
-import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
 
 class App extends Component {
+  // TODO: ADD FUNCTION THAT CAN MANIPULATE OPTION
   option = 'joy'
 
   CopyChar = char => {
@@ -28,7 +28,6 @@ class App extends Component {
   render() { 
     return (
       <div className="App">
-        <p> test one two three... </p>
         <EmoticonButton CopyChar={this.CopyChar} option={this.option}/>
       </div>
     )
