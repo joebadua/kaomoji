@@ -1,6 +1,6 @@
 import React, { Component, useRef } from 'react';
-import Button from 'react-bootstrap/Button';
-//import {Button} from 'semantic-ui-react/src/elements/Button'
+//import Button from 'react-bootstrap/Button';
+import { Button } from 'semantic-ui-react'
 import './App.css';
 
 import Kaomojis from './kaomojis.json'
@@ -17,12 +17,10 @@ const EmojiButton = props => {
 
         return (
             <>
-                <Button basic 
+                <Button basic
                         className="Emoticon" 
                         id={index.emoticon} 
                         key={index.emoticon}
-                        variant="outline-dark"
-                        ref={target}
                         onClick={ () => ButtonEvent(this)}> {index.emoticon} </Button>
             </>
         )
