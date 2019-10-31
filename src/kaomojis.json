@@ -1,4 +1,6 @@
-[{
+{
+  "joy": [
+  {
     "emoticon": "（*＾ワ＾*）",
     "category": "joy",
     "subcategory": "cheerful"
@@ -51,4 +53,35 @@
     "emoticon": "(*´▽`*)",
     "category": "joy"
   }
-]
+  ],
+  "love": [
+    {
+      "emoticon": "(ﾉ´ з `)ノ",
+      "category": "love"
+    },
+    {
+      "emoticon": "(♡μ_μ)",
+      "category": "love"
+    },
+    {
+      "emoticon": "☆⌒ヽ(*'､^*)chu",
+      "category": "love"
+    },
+    {
+      "emoticon": "( ´ ∀ `)ノ～ ♡ ",
+      "category": "love"
+    },
+    {
+      "emoticon": "(*˘︶˘*).｡.:*♡",
+      "category": "love"
+    },
+    {
+      "emoticon": "Σ>―(〃°ω°〃)♡→",
+      "category": "love"
+    },
+    {
+      "emoticon": "(°◡°♡)",
+      "category": "love"
+    }
+  ]
+}

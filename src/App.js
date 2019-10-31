@@ -4,6 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 class App extends Component {
+  option = 'joy'
+
   CopyChar = char => {
     /* REMOVE THIS LATER */console.log('inside CopyChar, char is: ' + char) 
     var input = document.getElementById(char).innerHTML
@@ -26,7 +28,7 @@ class App extends Component {
   render() { 
     return (
       <div className="App">
-        <EmoticonButton CopyChar={this.CopyChar}/>
+        <EmoticonButton CopyChar={this.CopyChar} option={this.option}/>
       </div>
     )
   }
