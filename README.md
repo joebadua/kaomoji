@@ -1,3 +1,5 @@
 ## test one two three..
 
-More updates to come soon.  ☆*:.｡.o(≧▽≦)o.｡.:*☆ 
+Japanese emoticon website, using React, Express, Semantic UI, and MongoDB
+
+Currently a WIP, more updates to come soon.  ☆*:.｡.o(≧▽≦)o.｡.:*☆ 
