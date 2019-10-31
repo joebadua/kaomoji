@@ -1,5 +1,6 @@
 import React, { Component, useRef } from 'react';
 import Button from 'react-bootstrap/Button';
+//import {Button} from 'semantic-ui-react/src/elements/Button'
 import './App.css';
 
 import Kaomojis from './kaomojis.json'
@@ -9,18 +10,18 @@ const EmojiButton = props => {
     const option = props.option
     const emojilist = Kaomojis[option]
 
-    const list = emojilist.map(index => { 
+    const list = Kaomojis.joy.map(index => { 
         const ButtonEvent = () => {
             props.CopyChar(index.emoticon)
         }
 
         return (
             <>
-                <Button className="Emoticon" 
+                <Button basic 
+                        className="Emoticon" 
                         id={index.emoticon} 
                         key={index.emoticon}
                         variant="outline-dark"
-                        size="lg" 
                         ref={target}
                         onClick={ () => ButtonEvent(this)}> {index.emoticon} </Button>
             </>
