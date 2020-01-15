@@ -28,6 +28,9 @@ class App extends Component {
   render() { 
     return (
       <div className="App">
+                <h1> （*＾ワ＾*） </h1>
+                <h2> Kaomojis! </h2>
+                <p> Simply click a button, and it automatically copies it to your clipboard! </p>
         <EmoticonButton CopyChar={this.CopyChar} option={this.option}/>
       </div>
     )

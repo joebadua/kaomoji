@@ -1,5 +1,4 @@
 import React, { Component, useRef } from 'react';
-//import Button from 'react-bootstrap/Button';
 import { Button } from 'semantic-ui-react'
 import './App.css';
 
@@ -9,7 +8,7 @@ const EmojiButton = props => {
     const option = props.option
     const emojilist = Kaomojis[option]
 
-    const list = Kaomojis.joy.map(index => { 
+    const list = emojilist.map(index => { 
         const ButtonEvent = () => {
             props.CopyChar(index.emoticon)
         }
@@ -36,7 +35,6 @@ class EmoticonButton extends Component {
 
         return (
             <div className="EmoticonButton">
-                <p> test one two three... </p>
                 <EmojiButton CopyChar={CopyChar} option={option}/>
             </div>
         )
