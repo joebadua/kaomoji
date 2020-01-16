@@ -1,9 +1,15 @@
 import React, { Component } from 'react';
 import EmoticonButton from './EmoticonButton'
+import FilterButtons from './FilterButtons'
 import './App.css'
 
 class App extends Component {
-  // TODO: ADD FUNCTION THAT CAN MANIPULATE OPTION
+  /* TODO: 
+      * ADD FUNCTION THAT CAN MANIPULATE OPTION
+      * make entire website larger by 20%
+      * add filter list 
+      * set up mongoDB
+  */
   option = 'joy'
 
   CopyChar = char => {
@@ -28,9 +34,10 @@ class App extends Component {
   render() { 
     return (
       <div className="App">
-                <h1> （*＾ワ＾*） </h1>
-                <h2> Kaomojis! </h2>
-                <p> Simply click a button, and it automatically copies it to your clipboard! </p>
+        <h1> （*＾ワ＾*） </h1>
+        <h2> Kaomojis! </h2>
+        <p> Simply click a button, and it automatically copies it to your clipboard! </p>
+        <FilterButtons />
         <EmoticonButton CopyChar={this.CopyChar} option={this.option}/>
       </div>
     )

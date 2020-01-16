@@ -4,13 +4,14 @@ import './App.css';
 
 import Kaomojis from './kaomojis.json'
 
-const EmojiButton = props => {
-    const option = props.option
-    const emojilist = Kaomojis[option]
+const FilterButton = () => {
+    const filterList = Kaomojis;
+    const ifJoy = true;
+    const ifLove = true;
 
-    const list = emojilist.map(index => { 
+    const list = filterList.map(index => { 
         const ButtonEvent = () => {
-            props.CopyChar(index.emoticon)
+
         }
 
         return (
@@ -27,19 +28,26 @@ const EmojiButton = props => {
     return (
         <div>{list}</div>
     )
+
+
+
 }
 
-class EmoticonButton extends Component {
-    render() {
-        const {CopyChar, option} = this.props
 
+
+
+
+class FilterButtons extends Component {
+    render() {
         return (
-            <div className="EmoticonButton">
-                <EmojiButton CopyChar={CopyChar} option={option}/>
+            <div className="FilterButtons">
+
+                <FilterButton />
+
             </div>
         )
     }
     
 }
 
-export default EmoticonButton;
+export default FilterButtons;

@@ -1,87 +1,63 @@
 {
   "joy": [
   {
-    "emoticon": "（*＾ワ＾*）",
-    "category": "joy",
-    "subcategory": "cheerful"
+    "emoticon": "（*＾ワ＾*）"
   },
   {
-    "emoticon": "(*＾წ＾*）",
-    "category": "joy",
-    "subcategory": "cheerful"
+    "emoticon": "(*＾წ＾*）"
   },
   {
-    "emoticon": "(*꧆▽꧆*)",
-    "category": "joy",
-    "subcategory": "cheerful"
+    "emoticon": "(*꧆▽꧆*)"
   },
   {
-    "emoticon": "ヾ(＠⌒ー⌒＠)ノ",
-    "category": "joy",
-    "subcategory": "cheerful"
+    "emoticon": "ヾ(＠⌒ー⌒＠)ノ"
   },
   {
-    "emoticon": "☆*: .｡. o(≧▽≦)o .｡.:*☆ ",
-    "category": "joy",
-    "subcategory": "excited"
+    "emoticon": "☆*: .｡. o(≧▽≦)o .｡.:*☆ "
   },
   {
-    "emoticon": "。.:☆*:･'(*⌒―⌒*)))",
-    "category": "joy"
+    "emoticon": "。.:☆*:･'(*⌒―⌒*)))"
   },
   {
-    "emoticon": "｀;:゛;｀;･(°ε° )",
-    "category": "joy"
+    "emoticon": "｀;:゛;｀;･(°ε° )"
   },
   {
-    "emoticon": "(o･ω･o)",
-    "category": "joy"
+    "emoticon": "(o･ω･o)"
   },
   {
-    "emoticon": "(＠＾◡＾)",
-    "category": "joy"
+    "emoticon": "(＠＾◡＾)"
   },
   {
-    "emoticon": "(⌒▽⌒)☆",
-    "category": "joy"
+    "emoticon": "(⌒▽⌒)☆"
   },
   {
-    "emoticon": "<(￣︶￣)>",
-    "category": "joy"
+    "emoticon": "<(￣︶￣)>"
   },
   {
-    "emoticon": "(*´▽`*)",
-    "category": "joy"
+    "emoticon": "(*´▽`*)"
   }
-  ],
+],
   "love": [
     {
-      "emoticon": "(ﾉ´ з `)ノ",
-      "category": "love"
+      "emoticon": "(ﾉ´ з `)ノ"
     },
     {
-      "emoticon": "(♡μ_μ)",
-      "category": "love"
+      "emoticon": "(♡μ_μ)"
     },
     {
-      "emoticon": "☆⌒ヽ(*'､^*)chu",
-      "category": "love"
+      "emoticon": "☆⌒ヽ(*'､^*)chu"
     },
     {
-      "emoticon": "( ´ ∀ `)ノ～ ♡ ",
-      "category": "love"
+      "emoticon": "( ´ ∀ `)ノ～ ♡ "
     },
     {
-      "emoticon": "(*˘︶˘*).｡.:*♡",
-      "category": "love"
+      "emoticon": "(*˘︶˘*).｡.:*♡"
     },
     {
-      "emoticon": "Σ>―(〃°ω°〃)♡→",
-      "category": "love"
+      "emoticon": "Σ>―(〃°ω°〃)♡→"
     },
     {
-      "emoticon": "(°◡°♡)",
-      "category": "love"
+      "emoticon": "(°◡°♡)"
     }
   ]
 }
