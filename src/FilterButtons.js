@@ -9,7 +9,7 @@ const FilterButton = () => {
     const ifJoy = true;
     const ifLove = true;
 
-}
+}  
 
 class FilterButtons extends Component {
     render() {
