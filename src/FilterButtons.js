@@ -3,19 +3,18 @@ import { Button } from 'semantic-ui-react'
 import './App.css';
 
 import Kaomojis from './kaomojis.json'
+import EmoticonButton from './EmoticonButton';
 
-const FilterButton = () => {
-    const filterList = Kaomojis;
-    const ifJoy = true;
-    const ifLove = true;
-
-}  
 
 class FilterButtons extends Component {
+
+    option = 'joy'
+
     render() {
+
         return (
             <div className="FilterButtons">
-
+                <EmoticonButton />
             </div>
         )
     }

@@ -5,8 +5,7 @@ import './App.css';
 import Kaomojis from './kaomojis.json'
 
 const EmojiButton = props => {
-    const option = props.option
-    const emojilist = Kaomojis[option]
+    const emojilist = Kaomojis[props.option]
 
     const list = emojilist.map(index => { 
         const ButtonEvent = () => {
@@ -31,11 +30,11 @@ const EmojiButton = props => {
 
 class EmoticonButton extends Component {
     render() {
-        const {CopyChar, option} = this.props
+        const {CopyChar} = this.props
 
         return (
             <div className="EmoticonButton">
-                <EmojiButton CopyChar={CopyChar} option={option}/>
+                <EmojiButton CopyChar={CopyChar} option={"joy"}/>
             </div>
         )
     }

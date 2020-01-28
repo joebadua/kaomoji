@@ -10,7 +10,7 @@ class App extends Component {
       * add filter list 
       * set up mongoDB
   */
-  option = 'joy'
+
 
   CopyChar = char => {
     /* REMOVE THIS LATER */console.log('inside CopyChar, char is: ' + char) 
@@ -32,12 +32,12 @@ class App extends Component {
 
   
   render() { 
+    
     return (
       <div className="App">
         <h1> （*＾ワ＾*） </h1>
         <h2> Kaomojis! </h2>
         <p> Simply click a button, and it automatically copies it to your clipboard! </p>
-        <FilterButtons />
         <EmoticonButton CopyChar={this.CopyChar} option={this.option}/>
       </div>
     )
