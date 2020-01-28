@@ -5,20 +5,18 @@ import './App.css';
 import Kaomojis from './kaomojis.json'
 import EmoticonButton from './EmoticonButton';
 
+const FilterButtons = props => {
 
-class FilterButtons extends Component {
-
-    option = 'joy'
-
-    render() {
 
         return (
-            <div className="FilterButtons">
-                <EmoticonButton />
-            </div>
+            <>
+            <Button basic color="black"
+                onClick={props.setLove()}>
+            </Button>
+            </>
         )
-    }
-    
+
+
 }
 
 export default FilterButtons;

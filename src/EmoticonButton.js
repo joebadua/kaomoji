@@ -1,15 +1,33 @@
-import React, { Component } from 'react';
+import React, { Component, setState } from 'react';
 import { Button } from 'semantic-ui-react'
 import './App.css';
 
 import Kaomojis from './kaomojis.json'
+
+const CopyChar = char => {
+    /* REMOVE THIS LATER */console.log('inside CopyChar, char is: ' + char) 
+    var input = document.getElementById(char).innerHTML
+    var copy = document.createElement('input');
+
+    document.getElementById(char).innerHTML = 'Copied!'
+    setTimeout( () => {
+      document.getElementById(char).innerHTML = input
+    }, 1000)
+
+    copy.value = input
+    copy.id = 'inputID';
+    document.body.appendChild(copy);
+    copy.select();
+    document.execCommand('copy');
+    document.body.removeChild(copy); 
+  }
 
 const EmojiButton = props => {
     const emojilist = Kaomojis[props.option]
 
     const list = emojilist.map(index => { 
         const ButtonEvent = () => {
-            props.CopyChar(index.emoticon)
+            CopyChar(index.emoticon)
         }
 
         return (
@@ -28,17 +46,4 @@ const EmojiButton = props => {
     )
 }
 
-class EmoticonButton extends Component {
-    render() {
-        const {CopyChar} = this.props
-
-        return (
-            <div className="EmoticonButton">
-                <EmojiButton CopyChar={CopyChar} option={"joy"}/>
-            </div>
-        )
-    }
-    
-}
-
-export default EmoticonButton;
+export default EmojiButton;
