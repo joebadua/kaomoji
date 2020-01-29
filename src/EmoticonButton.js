@@ -1,6 +1,6 @@
-import React from 'react';
+import React from 'react'
 import { Button } from 'semantic-ui-react'
-import './App.css';
+import './App.css'
 
 import Kaomojis from './kaomojis.json'
 
@@ -9,12 +9,12 @@ const CopyChar = char => {
     var input = document.getElementById(char).innerHTML
     var copy = document.createElement('input');
 
-    /*
+    
     document.getElementById(char).innerHTML = 'Copied!'
     setTimeout( () => {
       document.getElementById(char).innerHTML = input
     }, 1000)
-    */
+    
 
     copy.value = input
     copy.id = 'inputID';
@@ -30,6 +30,7 @@ const EmojiButton = props => {
     const list = emojilist.map(index => { 
         const ButtonEvent = () => {
             CopyChar(index.emoticon)
+
         }
         
         return (
