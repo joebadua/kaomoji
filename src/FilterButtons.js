@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button } from 'semantic-ui-react'
+import { Button, Icon } from 'semantic-ui-react'
 import './App.css';
 
 const FilterButtons = props => {
@@ -7,8 +7,10 @@ const FilterButtons = props => {
         return (
             <>
             <Button basic color="black"
-                onClick={props.setLove}>
-                test
+                onClick={props.setOption}>
+                <Icon name ={props.icon}>
+                    {props.filter}
+                </Icon>
             </Button>
             </>
         )
