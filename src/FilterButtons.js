@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Button, Icon } from 'semantic-ui-react'
 import './App.css';
 
@@ -6,11 +6,11 @@ const FilterButtons = props => {
 
         return (
             <>
-            <Button basic color="black"
+            <Button primary
                 onClick={props.setOption}>
                 <Icon name ={props.icon}>
-                    {props.filter}
                 </Icon>
+                {props.filter}
             </Button>
             </>
         )
