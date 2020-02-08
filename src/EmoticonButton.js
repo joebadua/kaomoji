@@ -5,12 +5,12 @@ import './App.css'
 import Kaomojis from './kaomojis.json'
 
 const CopyChar = char => {
-    /* REMOVE THIS LATER */console.log('inside CopyChar, char is: ' + char) 
     var input = document.getElementById(char).innerHTML
     var copy = document.createElement('input');
-
     
     document.getElementById(char).innerHTML = 'Copied!'
+
+
     setTimeout( () => {
       document.getElementById(char).innerHTML = input
     }, 1000)
@@ -22,6 +22,7 @@ const CopyChar = char => {
     copy.select();
     document.execCommand('copy');
     document.body.removeChild(copy); 
+
   }
 
 const EmojiButton = props => {
