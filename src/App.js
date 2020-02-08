@@ -3,12 +3,14 @@ import EmojiButton from './EmoticonButton'
 import FilterButtons from './FilterButtons'
 import TextArea from './TextArea'
 import './App.css'
+import Kaomojis from './kaomojis.json'
 
 class App extends Component {
   
   state = {
     option: "all",
-    visible: true
+    visible: true,
+    randomInt: Math.floor(Math.random() * 10) // for rendering a random emoji from the start
   }
   
   setAll = () => { this.setState({ option: "all"}) }
@@ -16,9 +18,12 @@ class App extends Component {
   setJoy = () => { this.setState({ option: "joy" }) }
 
   render() { 
+    
+    const emoji = Kaomojis['all'][this.state.randomInt]
+
     return (
       <div className="App">
-        <h1> （*＾ワ＾*） </h1>
+        <h1> {emoji.emoticon} </h1>
         <h2> Kaomojis! </h2>
           <p> Simply click a button, and it automatically copies it to your clipboard! </p>
           <h1> 
