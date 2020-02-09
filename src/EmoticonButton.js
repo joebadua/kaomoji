@@ -12,9 +12,7 @@ const CopyChar = char => {
             document.getElementById(char).innerHTML = char // reset to OG emoticon
             input = document.getElementById(char).innerHTML
         }
-        else { // if they're not spamming
-            document.getElementById(char).innerHTML = input
-        }
+        document.getElementById(char).innerHTML = input
     }, 750)
 
     document.getElementById(char).innerHTML = 'Copied!'
