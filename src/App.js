@@ -10,7 +10,8 @@ class App extends Component {
   state = {
     option: "top15",
     visible: true,
-    randomInt: Math.floor(Math.random() * 15)
+    randomInt: Math.floor(Math.random() * 15),
+    data:null
   }
   
   setTop = () => { this.setState({ option: "top15"}) }
@@ -31,6 +32,7 @@ class App extends Component {
             <TextArea />
           </h1>
           <h1>
+          <p> {this.state.data}</p>
             <FilterButtons setOption={this.setTop} filter={"Popular"} icon={"arrow alternate circle up"}/>
             <FilterButtons setOption={this.setJoy} filter={"Joy"} icon={"smile outline"}/>
             <FilterButtons setOption={this.setLove} filter={"Love"} icon={"heart"}/>
