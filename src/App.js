@@ -18,6 +18,7 @@ class App extends Component {
   setLove = () => { this.setState({ option: "love" }) }
   setJoy = () => { this.setState({ option: "joy" }) }
   setAngry = () => {this.setState({ option: "angry"}) }
+  setSad = () => {this.setState ({option: "sad"}) }
 
   render() { 
   
@@ -37,6 +38,7 @@ class App extends Component {
             <FilterButtons setOption={this.setJoy} filter={"Joy"} icon={"smile outline"}/>
             <FilterButtons setOption={this.setLove} filter={"Love"} icon={"heart"}/>
             <FilterButtons setOption={this.setAngry} filter={"Angry"} icon={"thumbs down outline"}/>
+            <FilterButtons setOption={this.setSad} filter={"Sad"} icon={"frown outline"}/>
           </h1>
           <EmojiButton option={this.state.option}/>
       </div>
