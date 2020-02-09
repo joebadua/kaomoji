@@ -6,7 +6,7 @@ const FilterButtons = props => {
 
         return (
             <>
-            <Button primary
+            <Button secondary
                 onClick={props.setOption}>
                 <Icon name ={props.icon}>
                 </Icon>

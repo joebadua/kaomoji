@@ -8,19 +8,19 @@ import Kaomojis from './kaomojis.json'
 class App extends Component {
   
   state = {
-    option: "all",
+    option: "top15",
     visible: true,
     randomInt: Math.floor(Math.random() * 15)
   }
   
-  setAll = () => { this.setState({ option: "all"}) }
+  setTop = () => { this.setState({ option: "top15"}) }
   setLove = () => { this.setState({ option: "love" }) }
   setJoy = () => { this.setState({ option: "joy" }) }
   setAngry = () => {this.setState({ option: "angry"}) }
 
   render() { 
   
-    const startEmoji = Kaomojis['all'][this.state.randomInt]
+    const startEmoji = Kaomojis['top15'][this.state.randomInt]
 
     return (
       <div className="App">
@@ -31,7 +31,7 @@ class App extends Component {
             <TextArea />
           </h1>
           <h1>
-            <FilterButtons setOption={this.setAll} filter={"All"} icon={"circle"}/>
+            <FilterButtons setOption={this.setTop} filter={"Popular"} icon={"arrow alternate circle up"}/>
             <FilterButtons setOption={this.setJoy} filter={"Joy"} icon={"smile outline"}/>
             <FilterButtons setOption={this.setLove} filter={"Love"} icon={"heart"}/>
             <FilterButtons setOption={this.setAngry} filter={"Angry"} icon={"thumbs down outline"}/>

@@ -6,9 +6,7 @@
   margin-top: 2rem;
   text-align: center;
 }
-input{
-  text-align:center;
-}
+
 .App-logo {
   height: 40vmin;
 }
@@ -83,6 +81,16 @@ input{
 
 .EmoticonButton {
   text-align: center;
+}
+
+#Twitter-Button {
+  margin-left: 1rem;
+  margin-top: 1px ;
+  margin-right: 1rem;
+}
+#Twitter-Input {
+  text-align:center;
+  width: 500px;
 }
 
 

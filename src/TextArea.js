@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Form, Button } from 'semantic-ui-react'
+import { Form, Input, Button, Icon } from 'semantic-ui-react'
 
 const TextArea = props => {
     const Tweet = () => {
@@ -10,9 +10,11 @@ const TextArea = props => {
     return (
         <Form>
             <Form.Field>
-                <input id="Twitter-Input" placeholder='Test what you copied in here!' />
+                <input id="Twitter-Input" placeholder='Test what you copied in here!'/>
+                <Button primary id="Twitter-Button" onClick={ () => Tweet() }>
+                    <Icon name="twitter"></Icon>Tweet
+                </Button>
             </Form.Field>
-            <Button id="Twitter-Button" onClick={ () => Tweet() }>Tweet</Button>
         </Form>
     )
 }
