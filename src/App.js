@@ -36,9 +36,9 @@ class App extends Component {
           <p> {this.state.data}</p>
             <FilterButtons setOption={this.setTop} filter={"Popular"} icon={"arrow alternate circle up"}/>
             <FilterButtons setOption={this.setJoy} filter={"Joy"} icon={"smile outline"}/>
+            <FilterButtons setOption={this.setSad} filter={"Sad"} icon={"frown outline"}/>
             <FilterButtons setOption={this.setLove} filter={"Love"} icon={"heart"}/>
             <FilterButtons setOption={this.setAngry} filter={"Angry"} icon={"thumbs down outline"}/>
-            <FilterButtons setOption={this.setSad} filter={"Sad"} icon={"frown outline"}/>
           </h1>
           <EmojiButton option={this.state.option}/>
       </div>

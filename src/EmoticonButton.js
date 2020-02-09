@@ -8,7 +8,7 @@ const CopyChar = char => {
     var copy = document.createElement('input')
 
     setTimeout( () => {
-        if(input === null) { // if the user is spam clicking
+        while(input == null) { // if the user is spam clicking
             document.getElementById(char).innerHTML = char // reset to OG emoticon
             input = document.getElementById(char).innerHTML
         }
