@@ -12,4 +12,4 @@ Currently a WIP, working on adding in MongoDB for easier JSON access as well as 
 
 ### How it looks for far:
 
-![](public/kaomojis.png)
+![](public/test.png)
