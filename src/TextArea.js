@@ -1,33 +1,20 @@
 import React, { Component } from 'react'
-import { Form } from 'semantic-ui-react'
-import Twitter from 'twitter'
+import { Form, Button } from 'semantic-ui-react'
 
-require('dotenv').config()
-console.log(process.env.REACT_APP_TWITTER_KEY)
+const TextArea = props => {
+    const Tweet = () => {
+        let input = document.getElementById("Twitter-Input").value
+        window.open('https://twitter.com/intent/tweet?text='+input+'via kaomojis.herokuapp.com')
+    }
 
-const TestingTextArea = props => {
     return (
         <Form>
             <Form.Field>
-                <input placeholder ='Test what you copied in here!' />
+                <input id="Twitter-Input" placeholder='Test what you copied in here!' />
             </Form.Field>
+            <Button id="Twitter-Button" onClick={ () => Tweet() }>Tweet</Button>
         </Form>
     )
-}
-
-class TextArea extends Component {
-
-
-
-
-    render() {
-        return (
-            <TestingTextArea />
-        )
-    }
-
-
-
 }
 
 export default TextArea;

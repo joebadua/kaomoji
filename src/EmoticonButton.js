@@ -33,7 +33,6 @@ const EmojiButton = props => {
     const list = emojilist.map(index => { 
         const ButtonEvent = () => {
             CopyChar(index.emoticon)
-
         }
         
         return (
