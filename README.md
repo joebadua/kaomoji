@@ -1,6 +1,6 @@
 ## test one two three..
 
-[Demo](http://kaomojis.herokuapp.com/) (This may take awhile to load as server needs to 'wake up')
+[Demo](https://kaomojis.herokuapp.com/) (This may take awhile to load as server needs to 'wake up')
 
 Japanese emoticon website, using React, & Semantic UI
 
