@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { Form } from 'semantic-ui-react'
+import Twitter from 'twitter'
+require('dotenv').config()
+console.log(process.env.REACT_APP_TWITTER_KEY)
 
-const TestTextArea = props => {
+const TestingTextArea = props => {
     return (
         <Form>
             <Form.Field>
@@ -11,4 +14,19 @@ const TestTextArea = props => {
     )
 }
 
-export default TestTextArea;
+class TextArea extends Component {
+
+    
+
+
+    render() {
+        return (
+            <TestingTextArea />
+        )
+    }
+
+
+
+}
+
+export default TextArea;

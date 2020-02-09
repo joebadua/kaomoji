@@ -10,7 +10,6 @@ class App extends Component {
   state = {
     option: "all",
     visible: true,
-    randomInt: Math.floor(Math.random() * 50) // for rendering a random emoji from the start
   }
   
   setAll = () => { this.setState({ option: "all"}) }
@@ -20,11 +19,12 @@ class App extends Component {
 
   render() { 
     
-    const emoji = Kaomojis['all'][this.state.randomInt]
+    const randomInt = Math.floor(Math.random() * 15) // for rendering a random emoji from the start
+    const startEmoji = Kaomojis['all'][randomInt]
 
     return (
       <div className="App">
-        <h1> {emoji.emoticon} </h1>
+        <h1> {startEmoji.emoticon} </h1>
         <h2> Kaomojis! </h2>
           <p> Simply click a button, and it automatically copies it to your clipboard! </p>
           <h1> 
