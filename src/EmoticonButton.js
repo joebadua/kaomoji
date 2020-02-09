@@ -5,15 +5,21 @@ import Kaomojis from './kaomojis.json'
 
 const CopyChar = char => {
     var input = document.getElementById(char).innerHTML
-    var copy = document.createElement('input');
-    
-    document.getElementById(char).innerHTML = 'Copied!'
-
+    var copy = document.createElement('input')
 
     setTimeout( () => {
-      document.getElementById(char).innerHTML = input
-    }, 1000)
-    
+        if(input === null) { // if the user is spam clicking
+            document.getElementById(char).innerHTML = char // reset to OG emoticon
+            input = document.getElementById(char).innerHTML
+        }
+        else { // if they're not spamming
+            document.getElementById(char).innerHTML = input
+        }
+    }, 750)
+
+    document.getElementById(char).innerHTML = 'Copied!'
+    document.getElementById(char).style.color = "blue"
+
     copy.value = input
     copy.id = 'inputID';
     document.body.appendChild(copy);
@@ -25,7 +31,6 @@ const CopyChar = char => {
 
 const EmojiButton = props => {
     const emojilist = Kaomojis[props.option]
-
 
     const list = emojilist.map(index => { 
         const ButtonEvent = () => {

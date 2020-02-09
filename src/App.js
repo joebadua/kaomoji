@@ -10,6 +10,7 @@ class App extends Component {
   state = {
     option: "all",
     visible: true,
+    randomInt: Math.floor(Math.random() * 15)
   }
   
   setAll = () => { this.setState({ option: "all"}) }
@@ -18,9 +19,8 @@ class App extends Component {
   setAngry = () => {this.setState({ option: "angry"}) }
 
   render() { 
-    
-    const randomInt = Math.floor(Math.random() * 15) // for rendering a random emoji from the start
-    const startEmoji = Kaomojis['all'][randomInt]
+  
+    const startEmoji = Kaomojis['all'][this.state.randomInt]
 
     return (
       <div className="App">

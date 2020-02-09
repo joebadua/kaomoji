@@ -1,6 +1,9 @@
 .App {
   max-width: 680px;
   margin: 2rem auto;
+  margin-left: 10rem auto;
+  margin-right: 10rem auto;
+  margin-top: 2rem;
   text-align: center;
 }
 input{
