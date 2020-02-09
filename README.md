@@ -2,7 +2,7 @@
 
 [Demo](https://kaomojis.herokuapp.com/) (This may take awhile to load as server needs to 'wake up')
 
-Japanese emoticon website, using React, & Semantic UI
+Japanese emoticon website, front-end using React & Semantic UI, back-end using Node.
 
 Kind of like [this](http://japaneseemoticons.me), but the end result will be a lot more _lightweight_, _efficient_, and _easier to navigate_ through categories. 
 
