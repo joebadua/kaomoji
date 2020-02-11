@@ -8,21 +8,21 @@ import Kaomojis from './kaomojis.json'
 class App extends Component {
   
   state = {
-    option: "top15",
+    option: "top",
     visible: true,
     randomInt: Math.floor(Math.random() * 15),
-    data:null
+    isDarkMode: false
   }
   
-  setTop = () => { this.setState({ option: "top15"}) }
+  setTop = () => { this.setState({ option: "top"}) }
   setLove = () => { this.setState({ option: "love" }) }
   setJoy = () => { this.setState({ option: "joy" }) }
-  setAngry = () => {this.setState({ option: "angry"}) }
-  setSad = () => {this.setState ({option: "sad"}) }
+  setAngry = () => { this.setState({ option: "angry"}) }
+  setSad = () => { this.setState ({option: "sad"}) }
 
   render() { 
   
-    const startEmoji = Kaomojis['top15'][this.state.randomInt]
+    const startEmoji = Kaomojis['top'][this.state.randomInt]
 
     return (
       <div className="App">
@@ -33,7 +33,6 @@ class App extends Component {
             <TextArea />
           </h1>
           <h1>
-          <p> {this.state.data}</p>
             <FilterButtons setOption={this.setTop} filter={"Popular"} icon={"arrow alternate circle up"}/>
             <FilterButtons setOption={this.setJoy} filter={"Joy"} icon={"smile outline"}/>
             <FilterButtons setOption={this.setSad} filter={"Sad"} icon={"frown outline"}/>
