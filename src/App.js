@@ -3,6 +3,7 @@ import EmojiButton from './EmoticonButton'
 import FilterButtons from './FilterButtons'
 import TextArea from './TextArea'
 import './App.css'
+
 import Kaomojis from './kaomojis.json'
 
 class App extends Component {
@@ -18,7 +19,9 @@ class App extends Component {
   setLove = () => { this.setState({ option: "love" }) }
   setJoy = () => { this.setState({ option: "joy" }) }
   setAngry = () => { this.setState({ option: "angry"}) }
-  setSad = () => { this.setState ({option: "sad"}) }
+  setSad = () => { this.setState ({ option: "sad"}) }
+  setBear= () => { this.setState ({ option: "bear"}) }
+
 
   render() { 
   
@@ -38,6 +41,7 @@ class App extends Component {
             <FilterButtons setOption={this.setSad} filter={"Sad"} icon={"frown outline"}/>
             <FilterButtons setOption={this.setLove} filter={"Love"} icon={"heart"}/>
             <FilterButtons setOption={this.setAngry} filter={"Angry"} icon={"thumbs down outline"}/>
+            <FilterButtons setOption={this.setBear} filter={"Bear"} icon={"star outline"}/>
           </h1>
           <EmojiButton option={this.state.option}/>
       </div>
